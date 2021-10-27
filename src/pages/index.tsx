@@ -5,6 +5,6 @@ const Title = styled.h1`
   font-size: 50px;
 `
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return <Title>My page</Title>
 }
