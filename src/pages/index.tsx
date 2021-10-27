@@ -1,10 +1,1 @@
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
-
-export default function Home(): JSX.Element {
-  return <Title>My page</Title>
-}
+export { makeLogin as default } from '@/main/factories/pages/home/home-factory'
