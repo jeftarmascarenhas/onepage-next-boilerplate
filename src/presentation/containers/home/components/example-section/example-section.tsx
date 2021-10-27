@@ -4,7 +4,7 @@ import { SectionExampleWrapper } from './styles'
 
 const SectionExample: React.FC = () => {
   return (
-    <SectionExampleWrapper>
+    <SectionExampleWrapper id="example">
       <Title>Section-Example</Title>
     </SectionExampleWrapper>
   )

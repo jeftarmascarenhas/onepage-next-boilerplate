@@ -4,7 +4,7 @@ import { HomeSectionWrapper } from './styles'
 
 const HomeSection: React.FC = () => {
   return (
-    <HomeSectionWrapper>
+    <HomeSectionWrapper id="home">
       <Title>Section-Home</Title>
     </HomeSectionWrapper>
   )
