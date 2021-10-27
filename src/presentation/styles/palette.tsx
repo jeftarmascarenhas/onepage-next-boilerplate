@@ -3,15 +3,20 @@ type Palette = {
 }
 
 export const grey: Palette = {
-  0: '#fafafa',
-  50: '#f5f5f5',
-  100: '#EFEFEF',
-  200: '#e0e0e0',
+  50: '#fafafa',
+  100: '#f5f5f5',
+  200: '#eeeeee',
+  300: '#e0e0e0',
+  400: '#bdbdbd',
+  500: '#9e9e9e',
   600: '#B1B1B1',
-  700: '#616161',
-  A50: '#dbdbdb',
-  A100: '#d5d5d5',
+  700: '#757575',
+  800: '#424242',
+  900: '#212121',
+  A100: '##f5f5f5',
   A200: '#4a4a4a',
+  A400: '#bdbdbd',
+  A700: '#616161',
 }
 
 export const palette = {

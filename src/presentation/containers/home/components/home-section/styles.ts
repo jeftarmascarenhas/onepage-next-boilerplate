@@ -6,4 +6,5 @@ export const HomeSectionWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: ${({ theme }): string => theme.palette.grey['800']};
 `

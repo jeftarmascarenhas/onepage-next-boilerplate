@@ -6,5 +6,5 @@ export const SectionExampleWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }): string => theme.palette.grey.A200};
+  background-color: ${({ theme }): string => theme.palette.grey['700']};
 `
