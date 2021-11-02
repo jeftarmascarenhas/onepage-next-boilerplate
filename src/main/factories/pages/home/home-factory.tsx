@@ -1,6 +1,6 @@
 import { Home } from '@/presentation/containers'
+import { makeFeatures } from '@/main/factories/usecases'
 
-// Add all Logic in here and pass as a props to Container
 export const makeLogin: React.FC = () => {
-  return <Home />
+  return <Home features={makeFeatures()} />
 }

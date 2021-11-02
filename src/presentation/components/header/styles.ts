@@ -26,6 +26,7 @@ export const HeaderBase = styled.header<HeaderBaseProps>`
     css`
       animation: ${fixednimate} 0.36s linear alternate;
     `};
+  z-index: 100;
 `
 
 export const NavItem = styled(LinkScroll)`
