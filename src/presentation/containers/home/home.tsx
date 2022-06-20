@@ -1,18 +1,22 @@
-import { LoadFeatures } from '@/domain/usecases'
-import { Footer, Header } from '@/presentation/components'
-import { HomeSection, SectionExample } from './components'
+import { Header } from '@/presentation/components'
+import {
+  HomeSection,
+  SectionAbout,
+  SectionContactUs,
+  SectionServices,
+} from './components'
+import { SectionAboutServices } from './styles'
 
-type Props = {
-  features: LoadFeatures.Model[]
-}
-
-export const Home: React.FC<Props> = ({ features }: Props) => {
+export const Home: React.FC = () => {
   return (
     <>
       <Header />
-      <HomeSection features={features} />
-      <SectionExample />
-      <Footer />
+      <HomeSection />
+      <SectionAboutServices>
+        <SectionAbout />
+        <SectionServices />
+        <SectionContactUs />
+      </SectionAboutServices>
     </>
   )
 }

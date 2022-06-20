@@ -75,7 +75,7 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kumbh+Sans:wght@200;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
           />
         </Head>

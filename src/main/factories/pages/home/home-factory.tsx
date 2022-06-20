@@ -1,6 +1,6 @@
 import { Home } from '@/presentation/containers'
 import { makeFeatures } from '@/main/factories/usecases'
 
-export const makeLogin: React.FC = () => {
+export const makeHome: React.FC = () => {
   return <Home features={makeFeatures()} />
 }

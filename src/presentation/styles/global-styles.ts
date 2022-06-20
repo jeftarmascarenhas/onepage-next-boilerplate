@@ -33,7 +33,9 @@ div#__next > div {
 body {
   font-size: 1rem;
   font-weight: 400;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Poppins', sans-serif;
   background-color: ${palette.common.black};
   background: ${palette.background.default};
   color: ${palette.common.white};

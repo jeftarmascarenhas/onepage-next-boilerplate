@@ -1,8 +1,11 @@
+import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
-import { HeaderBase, NavItem } from './styles'
+import SocialMedia from '../social/social'
+import { HeaderBase, HeaderContent, NavItem } from './styles'
 
 const Footer: React.FC = () => {
   const [sticky, setSticky] = useState(false)
+  const [openMenu, setOpenMenu] = useState(false)
 
   const handleScroll = () => {
     const scrollTop = document.documentElement.scrollTop
@@ -11,6 +14,10 @@ const Footer: React.FC = () => {
     } else if (scrollTop < 77) {
       setSticky(false)
     }
+  }
+
+  const handleOpenMenuToggle = (): void => {
+    setOpenMenu(!openMenu)
   }
 
   useEffect(() => {
@@ -22,26 +29,45 @@ const Footer: React.FC = () => {
 
   return (
     <HeaderBase sticky={sticky}>
-      <NavItem
-        activeClass="active"
-        spy
-        smooth
-        duration={600}
-        to="home"
-        offset={-77}
-      >
-        Home
-      </NavItem>
-      <NavItem
-        activeClass="active"
-        spy
-        smooth
-        duration={600}
-        to="example"
-        offset={-55}
-      >
-        Example
-      </NavItem>
+      <Image src="/logo.png" width={203} height={34} />
+      <button className="hamburger" onClick={handleOpenMenuToggle}>
+        <span></span>
+        <span></span>
+      </button>
+      <HeaderContent>
+        <NavItem
+          activeClass="active"
+          spy
+          smooth
+          duration={600}
+          to="about"
+          offset={-77}
+        >
+          ABOUT
+        </NavItem>
+        <NavItem
+          activeClass="active"
+          spy
+          smooth
+          duration={600}
+          to="services"
+          offset={-55}
+        >
+          SERVICES
+        </NavItem>
+        <NavItem
+          activeClass="active"
+          className="featured"
+          spy
+          smooth
+          duration={600}
+          to="contact-us"
+          offset={-120}
+        >
+          CONTACT US
+        </NavItem>
+        <SocialMedia className="header-social" />
+      </HeaderContent>
     </HeaderBase>
   )
 }
